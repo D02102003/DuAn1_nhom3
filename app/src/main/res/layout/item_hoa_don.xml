@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_gravity="center"
+
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/phukien1"
+            android:id="@+id/imgSPHD"/>
+
+
+            <TextView
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_tenSPHD"
+                android:text="Tên sản phẩm: "
+                android:textSize="20dp"/>
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tenKHHD"
+            android:text="Tên KH: "
+            android:textSize="20dp"/>
+
+
+        <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_giaSPHD"
+                android:text="Giá: "
+                android:textColor="#FF0000"
+                android:textSize="20dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_soLuongSPHD"
+            android:text="Số lượng: "
+            android:textColor="#FF0000"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ngayDatHangSPHD"
+            android:text="Ngày đặt hàng"
+            android:textColor="#FF0000"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ngayDuKienHoanThanhSPHD"
+            android:text="Ngày dự kiến  "
+            android:textColor="#FF0000"
+            android:textSize="20dp"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnhuyDon"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hủy đơn hàng"
+                android:backgroundTint="#FF00"/>
+            <Button
+                android:id="@+id/btn_SuaDon"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sửa đơn hàng"
+                android:backgroundTint="#FF00"/>
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

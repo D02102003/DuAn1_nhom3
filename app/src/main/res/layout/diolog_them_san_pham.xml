@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_them2"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+    <TextView
+        android:id="@+id/titleAddSanPham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="ADD SẢN PHẨM"
+        android:textColor="@color/red2"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/idSP"
+
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/image"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/colorXanhSang"/>
+
+
+
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/tvNameSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/vekhungnhap2"
+            android:drawableRight="@drawable/ic_baseline_person"
+            android:hint="Name Sản Phẩm"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:textColorHint="@color/colorXanhSang"
+            android:textColor="@color/colorXanhSang"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+
+            android:inputType="number"
+            android:id="@+id/tvGiaSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/vekhungnhap2"
+            android:drawableRight="@drawable/ic_baseline_person"
+            android:hint="Price"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:textColorHint="@color/colorXanhSang"
+            android:textColor="@color/colorXanhSang"
+            android:textSize="16dp" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+
+            android:id="@+id/tv_soluong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/vekhungnhap2"
+            android:drawableRight="@drawable/ic_baseline_person"
+            android:hint="Số lượng"
+            android:inputType="number"
+            android:padding="12dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="8dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="8dp"
+            android:textColorHint="@color/colorXanhSang"
+            android:textColor="@color/colorXanhSang"
+            android:textSize="16dp" />
+
+        <Spinner
+            android:layout_marginTop="20dp"
+            android:id="@+id/spSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarThumbHorizontal="@drawable/gradient_21"
+            android:scrollbarThumbVertical="@drawable/gradient_16"
+            android:textAlignment="center"
+            android:textColor="@color/red2"
+            android:textDirection="firstStrong"
+            android:theme="@style/mySpinnerItemStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                app:backgroundTint="@null"
+                android:id="@+id/btnXoaText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/khunglogin"
+                android:text="Cancel"
+                android:textColor="@color/white" />
+
+            <Button
+                app:backgroundTint="@null"
+                android:id="@+id/btnThemSanPham"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/khunglogin"
+                android:text="Add"
+                android:textColor="@color/white"  />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

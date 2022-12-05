@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgr_signin"
+    android:layout_height="match_parent"
+    tools:context=".activity.GiohangActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:layout_width="379dp"
+            android:layout_height="60dp"
+            android:background="@drawable/vekhungnhap"
+            android:fontFamily="@font/robotoslabvariablefont_wght"
+            android:gravity="center"
+            android:text="Giỏ Hàng"
+            android:textColor="#CA0101"
+            android:textSize="20dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_giohang"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="379dp"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_title_doanhthu"
+        android:fontFamily="@font/robotoslabvariablefont_wght"
+        android:gravity="center"
+        android:text = "Tong tien:"
+        android:textColor="#CA0101"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btAddHoaDon"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nhaplaimatkhaumoi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_title_doanhthu"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Xác Nhận"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
+
+</LinearLayout>
+
+    <!--    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+    <!--    tools:listitem="@layout/item_giohang"-->

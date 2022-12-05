@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.HoaDonFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btn_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6B3A2D"
+            android:textAlignment="center"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white"
+            app:menu="@menu/buttomnav2">
+
+
+
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn_navigation" />
+    </RelativeLayout>
+
+
+</LinearLayout>
